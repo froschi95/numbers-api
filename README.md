@@ -29,7 +29,7 @@ source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
 
 3. Install the project with development dependencies:
 ```bash
-uv pip install -e ".[dev]"
+uv pip install -e .
 ```
 
 4. Start the development server:
