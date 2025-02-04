@@ -2,6 +2,7 @@ from fastapi import APIRouter, Query, status
 from fastapi.responses import JSONResponse
 from app.services.classification import is_prime, is_perfect, is_armstrong, digit_sum
 from app.services.fun_fact import fetch_fun_fact
+# import logging
 
 router = APIRouter()
 
@@ -14,6 +15,7 @@ async def classify_number(number: int = Query(..., description="The number to cl
     Returns:
         - JSONResponse: A JSON response containing the classification results.
     """
+    # logging.info(f"Classifying number: {number}")
 
     properties = []
     if is_armstrong(number):
