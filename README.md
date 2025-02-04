@@ -9,7 +9,7 @@ Numbers API is a FastAPI-based application that provides various number classifi
 - Fetch fun facts about numbers from an external API.
 
 ## Requirements
-- Python 3.12 or higher
+- Python 3.11 or higher
 - FastAPI
 - HTTPX
 
@@ -23,13 +23,13 @@ cd numbers-api
 
 2. Create and activate a virtual environment using uv:
 ```bash
-uv venv
+python -m venv .venv
 source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
 ```
 
 3. Install the project with development dependencies:
 ```bash
-uv pip install -e .
+pip install .
 ```
 
 4. Start the development server:
